@@ -19,7 +19,7 @@ jobs:
         java-version: '17'
 
     - name: Build with Maven
-      run: ./mvn clean package
+      run: ./mvnw clean package
 
     - name: Deploy to Heroku
       uses: akhileshns/heroku-deploy@v3.12.13
